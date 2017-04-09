@@ -7,7 +7,7 @@ public class RegistrationPage
 {
     public void userShouldBeRegiusterSuccessfully()
     {
-        
+
 
     }
 }
