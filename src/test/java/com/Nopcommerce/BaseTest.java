@@ -16,27 +16,22 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest extends BasePage
 
 {
-
-
-
-
    @BeforeMethod
-    public void openBroweser()
+    public void openBroweser(String s)
    {
        driver = new FirefoxDriver();
        driver.manage().window().maximize();
        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
        driver.get("http://demo.nopcommerce.com/");
 
-
    }
 
-   @AfterMethod
-    public void closeBrowser()
-   {
-       driver.close();
+//   @AfterMethod
+//    public void closeBrowser()
+//   {
+//       driver.close();
+//   }
 
 
-   }
 }
 
